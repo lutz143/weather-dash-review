@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Weather Forcast Application</h1>
+    </header>
+    <div class="row w-100 mainbody">
+        <aside class="col-4 searchArea">
+            <div>
+                <h2>Search Location</h2>
+                <input id="input" onfocus="this.value=''" placeholder="Columbus, OHIO">
+                <button id="searchBtn">Search
+                </button>
+            </div>
+            <hr>
+            <div class="history">
+                <h3>Past Locations</h3>
+                <button id="btn0">--</button>
+                <button id="btn1">--</button>
+                <button id="btn2">--</button>
+                <button id="btn3">--</button>
+                <button id="btn4">--</button>
+            </div>
+        </aside>
+
+        <main id="forcasts" class="col-hidden">
+            <ul class="currentFC">
+                <li class="currentTitle"><span id="currentCity">City </span> <span id="currentDate"> --/--/-- </span>  <img class="icon" id="currentIcon"></img></li>>
+                <li>Temperature: <span id="currentTemp">--</span>°F</li>
+                <li>Humidity: <span id="currentHumidity">--</span>%</li>
+                <li>Wind Speed: <span id="currentWind">--</span>mph</li>
+            </ul>
+            <h4>Week Outlook</h4>
+            <div class="weekOut row">
+                <ul class="col" id="day1">
+                    <li id="date1">--/--/--</li>
+                    <img class = "icon" id="icon1"></img>
+                    <li id="temp1">Temp: </li>
+                    <li id="humidity1">Humidity: </li>
+                    <li id="wind1">Wind Speed:</li>
+                </ul>
+                <ul class="col" id="day2">
+                    <li id="date2">--/--/--</li>
+                    <img class = "icon" id="icon2"></img>
+                    <li id="temp2">Temp: </li>
+                    <li id="humidity2">Humidity: </li>
+                    <li id="wind2">Wind Speed:</li>
+                </ul>
+                <ul class="col" id="day3">
+                    <li id="date3">--/--/--</li>
+                    <img class = "icon" id="icon3"></img>
+                    <li id="temp3">Temp: </li>
+                    <li id="humidity3">Humidity: </li>
+                    <li id="wind3">Wind Speed:</li>
+                </ul>
+                <ul class="col" id="day4">
+                    <li id="date4">--/--/--</li>
+                    <img class = "icon" id="icon4"></img>
+                    <li id="temp4">Temp: </li>
+                    <li id="humidity4">Humidity: </li>
+                    <li id="wind4">Wind Speed:</li>
+                </ul>
+                <ul class="col" id="day5">
+                    <li id="date5">--/--/--</li>
+                    <img class = "icon" id="icon5"></img>
+                    <li id="temp5">Temp: </li>
+                    <li id="humidity5">Humidity: </li>
+                    <li id="wind5">Wind Speed:</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="./assets/script.js"></script>
+
+</body>
+</html>
